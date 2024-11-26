@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Oswald:wght@200..700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    font-family: "fredoka", sans-serif;
+    background-image: url('img/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cabecalho {
+    padding-top: 5px;
+    text-align: center;
+    font-family: "Fredoka", serif;
+    height: 75px;
+    width: 100%;
+    background: rgba(22, 2, 2, 0.5);
+    font-weight: bold;
+    animation: colorChange 5s infinite;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+@keyframes colorChange {
+    0% {
+        color: rgb(38, 117, 153);
+    }
+
+    25% {
+        color: rgb(161, 27, 27);
+    }
+
+    50% {
+        color: rgb(21, 184, 184);
+    }
+
+    75% {
+        color: rgb(209, 16, 16);
+    }
+
+    100% {
+        color: rgb(197, 212, 200);
+    }
+}
+
+#pagina {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 100px);
+    justify-content: space-between;
+}
+
+#central {
+    background-size: cover;
+    border: 1px solid black;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.336);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.icone-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icone {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.icone.reservado {
+    background: rgba(82, 66, 66, 0.7);
+}
+
+.icone:hover {
+    transform: scale(1.1);
+}
+
+.icone-wrapper span {
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+}
+
+#inferior {
+    width: 100%;
+    background: rgba(22, 2, 2, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.icone-contato {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    border-radius: 50%;
+}
